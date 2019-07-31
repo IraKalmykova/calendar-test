@@ -1,3 +1,5 @@
+[DEMO](https://irakalmykova.github.io/calendar-test/)
+
 ## Workflow
 - Run `npm install` to install dependencies.
 ## Development mode 

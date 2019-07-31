@@ -1,33 +1,118 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.section {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.section__header {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+}
+
+.section__header-title {
+  font-size: 18px;
+  font-weight: normal;
+  color: #4D4F5C;
+}
+
+.section__header-btn {
+
+}
+
+.btn {
+  border: 1px solid #707070;
+  background: #FFFFFF;
+  width: 66px;
+  height: 30px;
+}
+
+.section__info {
+  flex: 0 0 100%;
+  height: 32px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  position: relative;
+  margin: 20px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.section__info-btn {
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.event-form {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #43425D;
+  border-radius: 10px;
+  height: 275px;
+  width: 200px;
+  padding: 22px 25px;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 1;
+  background: white;
+}
+
+.event-form__data {
+  height: 29px;
+  width: 80%;
+  flex: 0 0 100%;
+  border: none;
+  border-bottom: 1px solid #cecece;
+}
+
+.event-form__btn {
+  font-size: 12px;
+  border: none;
+  background: none;
+  color: red;
+  padding: 0;
+  cursor: pointer;
+}
+
+.event-form__btn--active {
+  color: black;
+}
+
+.event-form__close {
+  border: 1px solid grey;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+.event-form__close:before,
+.event-form__close:after {
+  position: absolute;
+  left: 11px;
+  top: 4px;
+  content: ' ';
+  height: 15px;
+  width: 1px;
+  background-color: grey;
+}
+
+.event-form__close:before {
+  transform: rotate(45deg);
+}
+
+.event-form__close:after {
+  transform: rotate(-45deg);
+}
+
+.error {
+  font-size: 16px;
+  color: red;
 }
